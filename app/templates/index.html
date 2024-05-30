@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div id="game-board">
+    <div id="turn-indicator">Turn: X</div>
+    <table>
+        <tr>
+            <td id="cell-0-0"></td>
+            <td id="cell-0-1"></td>
+            <td id="cell-0-2"></td>
+        </tr>
+        <tr>
+            <td id="cell-1-0"></td>
+            <td id="cell-1-1"></td>
+            <td id="cell-1-2"></td>
+        </tr>
+        <tr>
+            <td id="cell-2-0"></td>
+            <td id="cell-2-1"></td>
+            <td id="cell-2-2"></td>
+        </tr>
+    </table>
+</div>
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
